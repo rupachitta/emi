@@ -1,3 +1,22 @@
-<p>
-  emi-chart works!
-</p>
+<div>
+  <table class="table">
+    <thead>
+      <tr>				
+        <th>Sr. No</th>
+        <th>EMI Amount</th>
+        <th>Principal</th>
+        <th>Interest</th>
+        <th>Balance</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let emi of chartArray; let i = index">
+        <td>{{ i+1 }}</td>
+        <td>{{ loanObj.emi }}</td>
+        <td>{{ emi.principal }}</td>
+        <td>{{ emi.interest }}</td>
+        <td>{{ emi.balance }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
