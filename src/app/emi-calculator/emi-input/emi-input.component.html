@@ -1,0 +1,28 @@
+<h2 style="text-align: center">Please fill in the details to generate report.</h2>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-6 col-md-6">
+      <form [formGroup]="formGroup" class="jumbotron" action="/action_page.php">
+        <div class="form-group">
+          <label for="principal">Enter Loan Amount:</label>
+          <input formControlName="amount" type="text" class="form-control" id="principal">
+        </div>
+        <div class="form-group">
+          <label for="emi">Enter EMI:</label>
+          <input formControlName="emi" type="text" class="form-control" id="emi">
+        </div>
+        <div class="form-group">
+          <label for="months">Enter No. Of Installments:</label>
+          <input formControlName="months" type="text" class="form-control" id="months">
+        </div>
+        <div class="form-group">
+          <label for="interest">Enter Interest Rate:</label>
+          <input formControlName="interest" type="text" class="form-control" id="interest">
+        </div>
+        <button type="submit" (click)="calculate()" class="btn btn-default">Submit</button>
+      </form>
+    </div>
+    <div class="col-lg-6 col-md-6"></div>
+  </div>
+</div>
+
