@@ -1,6 +1,8 @@
 <div>
   <h1 style="text-align: center">EMI Calculator</h1>
   <app-emi-features></app-emi-features>
-  <app-emi-input (change)="setEMI($event)"></app-emi-input>
-  <app-emi-chart [loanObj]="loanObj"></app-emi-chart>
+  <!--<app-emi-input (change)="setEMI($event)"></app-emi-input>-->
+</div>
+<div>
+  <router-outlet></router-outlet>
 </div>

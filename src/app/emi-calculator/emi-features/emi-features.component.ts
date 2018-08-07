@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MenuItem } from 'primeng/api';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-emi-features',
@@ -8,11 +9,13 @@ import { MenuItem } from 'primeng/api';
 })
 export class EmiFeaturesComponent implements OnInit {
 
+     
+    constructor(private _route: Router){}
   items: MenuItem[];
 
     ngOnInit() {
         this.items = [
-            {label: 'Amortization', icon: 'fa fa-fw fa-bar-chart'},
+            {label: 'Amortization', url: '/calculator/amortization', icon: 'fa fa-fw fa-bar-chart'},
             {label: 'Plan your Part Payment', icon: 'fa fa-fw fa-calendar'},
             {label: 'Find low interest Loans', icon: 'fa fa-fw fa-book'},
             {label: 'Manage your Accounts', icon: 'fa fa-fw fa-support'},

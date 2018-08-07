@@ -7,9 +7,9 @@ import { FormGroup, FormControl } from '@angular/forms';
   styleUrls: ['./emi-input.component.css']
 })
 export class EmiInputComponent implements OnInit {
-  @Output() change = new EventEmitter();
+  //@Output() change = new EventEmitter();
   formGroup: FormGroup;
-
+  loanObj;
   constructor() { }
 
   ngOnInit() {
@@ -21,6 +21,7 @@ export class EmiInputComponent implements OnInit {
   }
 
   calculate() {
-    this.change.emit(this.formGroup.value);
+    this.loanObj = this.formGroup.value;
+    //this.change.emit(this.formGroup.value);
   }
 }

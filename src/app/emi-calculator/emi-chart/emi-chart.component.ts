@@ -7,6 +7,7 @@ import { Component, OnInit, Input, OnChanges } from '@angular/core';
 })
 export class EmiChartComponent implements OnInit, OnChanges {
   @Input() loanObj;
+
   chartArray = [];
   constructor() { }
 

@@ -6,14 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./emi-calculator.component.css']
 })
 export class EmiCalculatorComponent implements OnInit {
-  loanObj;
+  //loanObj;
   constructor() { }
 
   ngOnInit() {
   }
 
-  setEMI(event) {
-    this.loanObj = event;
-  }
+  // setEMI(event) {
+  //   this.loanObj = event;
+  // }
 
 }

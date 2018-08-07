@@ -1,5 +1,5 @@
-<div>
-  <table class="table">
+<button type="button" class="btn btn-info" style="float:right" data-toggle="collapse" data-target="#myTable">Toggle Table</button>
+<table class="table">
     <thead>
       <tr>				
         <th>Sr. No</th>
@@ -9,14 +9,14 @@
         <th>Balance</th>
       </tr>
     </thead>
-    <tbody>
-      <tr *ngFor="let emi of chartArray; let i = index">
-        <td>{{ i+1 }}</td>
-        <td>{{ loanObj.emi }}</td>
-        <td>{{ emi.principal }}</td>
-        <td>{{ emi.interest }}</td>
-        <td>{{ emi.balance }}</td>
-      </tr>
+    <tbody id="myTable" class="collapse in">
+        <tr *ngFor="let emi of chartArray; let i = index">
+          <td>{{ i+1 }}</td>
+          <td>{{ loanObj.emi }}</td>
+          <td>{{ emi.principal }}</td>
+          <td>{{ emi.interest }}</td>
+          <td>{{ emi.balance }}</td>
+        </tr>
     </tbody>
-  </table>
-</div>
+</table>
+

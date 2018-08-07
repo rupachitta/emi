@@ -10,6 +10,7 @@ import { EmiCalculatorComponent } from './emi-calculator/emi-calculator.componen
 import { EmiInputComponent } from './emi-calculator/emi-input/emi-input.component';
 import { EmiChartComponent } from './emi-calculator/emi-chart/emi-chart.component';
 import { EmiFeaturesComponent } from './emi-calculator/emi-features/emi-features.component';
+import {BreadcrumbModule} from 'primeng/breadcrumb';
 
 @NgModule({
   imports: [
@@ -17,14 +18,16 @@ import { EmiFeaturesComponent } from './emi-calculator/emi-features/emi-features
     RouterModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BreadcrumbModule
   ],
   declarations: [
     AppComponent,
     EmiCalculatorComponent,
     EmiInputComponent,
     EmiChartComponent,
-    EmiFeaturesComponent
+    EmiFeaturesComponent,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
