@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {MenuItem} from 'primeng/api';
-import {TabMenuModule} from 'primeng/tabmenu';
+import { MenuItem } from 'primeng/api';
 
 @Component({
   selector: 'app-emi-features',
